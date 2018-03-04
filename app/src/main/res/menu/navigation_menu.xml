@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navigation_menu">
+
+    <item
+        android:id="@+id/navigationMenu_timetable"
+        android:title="Timetable"/>
+
+    <group
+        android:id="@+id/navigationMenu_groupData">
+
+        <item
+            android:id="@+id/navigationMenu_semesters"
+            android:title="Semesters"/>
+
+        <item
+            android:id="@+id/navigationMenu_records"
+            android:title="Records"/>
+
+    </group>
+
+    <group
+        android:id="@+id/navigationMenu_groupOther">
+
+        <item
+            android:id="@+id/navigationMenu_settings"
+            android:title="Settings"/>
+
+        <item
+            android:id="@+id/navigationMenu_helps"
+            android:title="Helps"/>
+
+        <item
+            android:id="@+id/navigationMenu_about"
+            android:title="About"/>
+
+    </group>
+
+    <item
+        android:id="@+id/navigationMenu_develop"
+        android:title="Develop"/>
+
+
+</menu>

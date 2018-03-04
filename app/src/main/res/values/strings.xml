@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">WTB</string>
+
+
+    <string name="dataCoreVersion">1.0.0</string>
+    <string name="dataSideVersion">1.0.0</string>
+    <string name="settingsVersion">1.0.0</string>
+    <string name="logVersion">1.0.0</string>
+    <string name="dataFilename">AppData.Wilx</string>
+    <string name="ten_mon_hoc">Tên môn học</string>
+    <string name="tin_chi">Tín chỉ</string>
+    <string name="nhom_to">Nhóm tổ</string>
+    <string name="ma_mon_hoc">Mã môn học</string>
+    <string name="tin_chi_hoc_phi">Tín chỉ học phí</string>
+    <string name="muc_hoc_phi">Mức học phí</string>
+    <string name="ten">Tên</string>
+    <string name="thu">Thứ : </string>
+    <string name="tiet">Tiết : </string>
+    <string name="tuan">Tuần : </string>
+    <string name="phong_hoc">Phòng học</string>
+    <string name="noi_hoc">Nơi học : </string>
+
+</resources>

@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="base_size">1dp</dimen>
+    <dimen name="textView_width">64dp</dimen>
+    <dimen name="textView_height">48dp</dimen>
+    <dimen name="textSizeNormal">18sp</dimen>
+</resources>

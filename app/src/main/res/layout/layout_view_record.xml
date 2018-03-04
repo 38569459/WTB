@@ -1,0 +1,1064 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/view_record_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="edit"
+            android:text="Edit"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="24dp"
+            android:paddingTop="12dp">
+
+            <EditText
+                android:id="@+id/view_record_mamonhoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/ma_mon_hoc"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/view_record_tenmonhoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/ten_mon_hoc"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/view_record_tinchi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/tin_chi"
+                android:inputType="number|numberDecimal" />
+
+            <EditText
+                android:id="@+id/view_record_tinchihocphi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/tin_chi_hoc_phi"
+                android:inputType="number|numberDecimal" />
+
+            <EditText
+                android:id="@+id/view_record_muchocphi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/muc_hoc_phi"
+                android:inputType="number|numberDecimal" />
+
+            <EditText
+                android:id="@+id/view_record_nhomto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/nhom_to"
+                android:inputType="textPersonName" />
+
+
+            <EditText
+                android:id="@+id/view_record_phonghoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/phong_hoc"
+                android:inputType="text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/view_record_thu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/thu"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/view_record_thu2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="thuChange"
+                    android:tag="0"
+                    android:text="2"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_thu3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="thuChange"
+                    android:tag="1"
+                    android:text="3"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_thu4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="thuChange"
+                    android:tag="2"
+                    android:text="4"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_thu5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="thuChange"
+                    android:tag="3"
+                    android:text="5"
+                    android:textSize="21sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+
+                <TextView
+                    android:id="@+id/view_record_thu6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="thuChange"
+                    android:tag="4"
+                    android:text="6"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_thu7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="thuChange"
+                    android:tag="5"
+                    android:text="7"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_cn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="thuChange"
+                    android:tag="6"
+                    android:text="CN"
+                    android:textSize="21sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/view_record_tiet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tiet"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/view_record_tiet1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tietChange"
+                    android:text="1"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tiet2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tietChange"
+                    android:text="2"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tiet3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tietChange"
+                    android:text="3"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tiet4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tietChange"
+                    android:text="4"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tiet5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tietChange"
+                    android:text="5"
+                    android:textSize="21sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/view_record_tiet6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tietChange"
+                    android:text="6"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tiet7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tietChange"
+                    android:text="7"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tiet8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tietChange"
+                    android:text="8"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tiet9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tietChange"
+                    android:text="9"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tiet10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tietChange"
+                    android:text="10"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tiet11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tietChange"
+                    android:text="11"
+                    android:textSize="21sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/view_record_tiet12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tietChange"
+                    android:text="12"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tiet13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tietChange"
+                    android:text="13"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tiet14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tietChange"
+                    android:text="14"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tiet15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tietChange"
+                    android:text="15"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tiet16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tietChange"
+                    android:text="16"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tiet17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tietChange"
+                    android:text="17"
+                    android:textSize="21sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/view_record_tuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tuan"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="1"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="2"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="3"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="4"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="5"
+                    android:textSize="21sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/view_record_tuan6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="6"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="7"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="8"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="9"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="10"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="11"
+                    android:textSize="21sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/view_record_tuan12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="12"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="13"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="14"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="15"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="16"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="17"
+                    android:textSize="21sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/view_record_tuan18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="18"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="19"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="20"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="21"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="22"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="23"
+                    android:textSize="21sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/view_record_tuan24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="24"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="25"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="26"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="27"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="28"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="29"
+                    android:textSize="21sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/view_record_tuan30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="30"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="31"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="32"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="33"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="34"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="35"
+                    android:textSize="21sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/view_record_tuan36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="36"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="37"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="38"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="39"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="40"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="41"
+                    android:textSize="21sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/view_record_tuan42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="42"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="43"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="44"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="45"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="46"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="47"
+                    android:textSize="21sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/view_record_tuan48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="48"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="49"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="50"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="51"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="52"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_tuan53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="tuanChange"
+                    android:text="53"
+                    android:textSize="21sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/view_record_noihoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/noi_hoc"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/view_record_cs1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="whereChange"
+                    android:text="CS1"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/view_record_cs2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="whereChange"
+                    android:text="CS2"
+                    android:textSize="21sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/view_record_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/view_record_cancel"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="cancel"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/view_record_save"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="save"
+            android:text="Save" />
+
+    </LinearLayout>
+
+</LinearLayout>
